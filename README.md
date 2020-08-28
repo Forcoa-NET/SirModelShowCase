@@ -1,6 +1,6 @@
-# SirModelShowCase
+# Sir Model applied on Karate Club
 
-Wellcome to ✨**SirModelShowCase**✨. This repository was created for purpose of presentation "spreading in network" to high school students. Example contains simple Python code that loads network, runs SIR model in multiple iterations and outputs of this iterations exports to images.
+Wellcome to ✨**SirModelShowCase**✨. This repository was created for purpose of presentation "spreading in network" to the high school students. Example contains simple Python code that loads network, runs SIR model in multiple iterations and outputs of this iterations exports to images.
 
 ## SIR
 
