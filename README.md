@@ -12,6 +12,8 @@ The model is instantiated on a graph having a **non-empty** set of infected node
 
 SIR assumes that if, during a generic iteration, a susceptible node comes into contact with an infected one, it becomes infected with probability beta, than it can be switch to removed with probability gamma (the only transition allowed are S→I→R).
 
+We used **ndlib** implementation of SIR model. For more information follow [doccumentation](https://ndlib.readthedocs.io/en/latest/reference/models/epidemics/SIR.html).
+
 ## Requirements
 
 - Python 3.8 🐍
