@@ -35,7 +35,6 @@ cfg.add_model_parameter('beta', 0.5)
 cfg.add_model_parameter('gamma', 0.1)
 cfg.add_model_parameter("fraction_infected", 0.05)
 model.set_initial_status(cfg)
-model.set_initial_status(cfg)
 
 number_of_iteration = 10
 iterations = model.iteration_bunch(number_of_iteration)
@@ -57,8 +56,9 @@ for iteration in iterations:
     nx.draw(g, positions, node_color=color_map, with_labels=True)
     filename = 'output/iteration-{}.png'
 
-    plt.savefig(filename.format(x), dpi=None, facecolor='w', edgecolor='w',
-                orientation='portrait', papertype=None, format=None,
-                transparent=False, bbox_inches=None, pad_inches=0.1,
-                frameon=None, metadata=None)
+    plt.show()
+    #plt.savefig(filename.format(x), dpi=None, facecolor='w', edgecolor='w',
+    #            orientation='portrait', papertype=None, format=None,
+    #            transparent=False, bbox_inches=None, pad_inches=0.1,
+    #            frameon=None, metadata=None)
     x = x+1
