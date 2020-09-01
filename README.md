@@ -32,7 +32,7 @@ Requirements for running script localy
 pip install networkx matplotlib fa2l ndlib tqdm
 ```
 
-5. Copy script from _jupyter.ipynb_ file and run it
+5. Copy script from _main.py_ file and run it
 
 ## VS Code and Jupyter
 
