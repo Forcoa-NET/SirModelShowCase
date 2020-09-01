@@ -5,6 +5,7 @@ import ndlib.models.ModelConfig as mc
 import ndlib.models.epidemics as ep
 
 
+#g = nx.les_miserables_graph()
 g = nx.karate_club_graph()
 
 # Prepare node positions for output
@@ -37,10 +38,10 @@ cfg.add_model_parameter("fraction_infected", 0.05)
 model.set_initial_status(cfg)
 
 number_of_iteration = 10
+# Simulation execution
 iterations = model.iteration_bunch(number_of_iteration)
 x = 0
 
-# Simulation execution
 color_map = []
 for iteration in range(g.number_of_nodes()):
     color_map.append('green')
@@ -52,13 +53,13 @@ for iteration in iterations:
         if status == 2:
             color_map[index] = 'grey'
 
-    ## nx.draw(g, node_color=color_map, with_labels=True)
     nx.draw(g, positions, node_color=color_map, with_labels=True)
     filename = 'output/iteration-{}.png'
 
     plt.show()
-    #plt.savefig(filename.format(x), dpi=None, facecolor='w', edgecolor='w',
+    # For local purposes you can save the files
+    # plt.savefig(filename.format(x), dpi=None, facecolor='w', edgecolor='w',
     #            orientation='portrait', papertype=None, format=None,
     #            transparent=False, bbox_inches=None, pad_inches=0.1,
     #            frameon=None, metadata=None)
-    x = x+1
+    x += 1

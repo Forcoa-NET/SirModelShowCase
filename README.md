@@ -16,21 +16,23 @@ We used **ndlib** implementation of SIR model. For more information follow [docc
 
 ## Requirements
 
+Requirements for running script localy
+
 - Python 3.8 🐍
 - Visual Studio Code (Highly recomended)
 
-## How to run
+## How to run with Jupyter
 
-Install all required dependencies
+1. Visit [Jupyter website](https://jupyter.org/try)
+2. Open **Try clasic notebook**
+3. In top menu choose _File -> Create new notebook -> Python3_
+4. Install all required dependencies
 
 ```bash
-pip install networkx
-pip install matplotlib
-pip install ndlib
-pip install fa2l
+pip install networkx matplotlib fa2l ndlib tqdm
 ```
 
-Then run the script through terminal or VS Code.
+5. Copy script from _jupyter.ipynb_ file and run it
 
 ## VS Code and Jupyter
 
