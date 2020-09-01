@@ -4,7 +4,6 @@ from fa2l import force_atlas2_layout
 import ndlib.models.ModelConfig as mc
 import ndlib.models.epidemics as ep
 
-
 #g = nx.les_miserables_graph()
 g = nx.karate_club_graph()
 
@@ -40,7 +39,6 @@ model.set_initial_status(cfg)
 number_of_iteration = 10
 # Simulation execution
 iterations = model.iteration_bunch(number_of_iteration)
-x = 0
 
 color_map = []
 for iteration in range(g.number_of_nodes()):
@@ -54,12 +52,4 @@ for iteration in iterations:
             color_map[index] = 'grey'
 
     nx.draw(g, positions, node_color=color_map, with_labels=True)
-    filename = 'output/iteration-{}.png'
-
     plt.show()
-    # For local purposes you can save the files
-    # plt.savefig(filename.format(x), dpi=None, facecolor='w', edgecolor='w',
-    #            orientation='portrait', papertype=None, format=None,
-    #            transparent=False, bbox_inches=None, pad_inches=0.1,
-    #            frameon=None, metadata=None)
-    x += 1
